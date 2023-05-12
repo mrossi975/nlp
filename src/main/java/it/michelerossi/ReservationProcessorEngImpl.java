@@ -66,8 +66,6 @@ public class ReservationProcessorEngImpl implements ReservationProcessor {
     }
 
     private String findReservationDate(String[] tokens) {
-
-
         for (int i = 0; i < tokens.length; i++) {
             var token = tokens[i];
             if (!token.equals(".") && (token.contains("/") || token.contains("."))) {
